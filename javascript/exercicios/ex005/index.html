@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Script que executa sozinho, sem a intervenção do usuário -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa em JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(115, 115, 171);
+            color: white;
+            font: normal 20pt Arial;
+        }                   /*isso é um comentario em CSS*/
+        h1{
+            color: rgb(249, 202, 81);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá,mundo!</h1> <!-- isso é um comentario em html -->
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} lentras.<br>`)
+        document.write(` Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write( `Seu nome em minúsculas é ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>
